@@ -20,9 +20,9 @@ void ScalarConverter::printScalarValues(const ScalarValues& values)
     if (values.isFloatConvertible) {
         std::cout << "float: " << values.f;
         if (values.f == static_cast<int>(values.f))
-            std::cout << values.f << ".0f" << std::endl;
+            std::cout << ".0f" << std::endl;
         else
-            std::cout << values.f << "f" << std::endl;
+            std::cout << "f" << std::endl;
     } else {
         std::cout << "float: impossible" << std::endl;
     }
@@ -30,11 +30,11 @@ void ScalarConverter::printScalarValues(const ScalarValues& values)
     if (values.isDoubleConvertible) {
         std::cout << "double: " << values.d;
         if (values.d == static_cast<int>(values.d))
-            std::cout << values.d << ".0" << std::endl;
+            std::cout << ".0" << std::endl;
         else
-            std::cout << values.d << std::endl;
+            std::cout << std::endl;
     } else {
-        std::cout << " impossible" << std::endl;
+        std::cout << "double: impossible" << std::endl;
     }
 }
 /*
